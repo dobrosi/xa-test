@@ -33,7 +33,7 @@ public class DataSourceConfiguration {
         Map<String, String> jpaProperties = new HashMap<>();
         jpaProperties.put("hibernate.hbm2ddl.auto", "update");
         jpaProperties.put("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
-        jpaProperties.put("javax.persistence.transactionType", "JTA");
+        jpaProperties.put("jakarta.persistence.transactionType", "JTA");
         return jpaProperties;
     }
 
